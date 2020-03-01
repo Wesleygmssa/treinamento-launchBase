@@ -6,7 +6,7 @@
 :computer: Aplicação de HTML, CSS, JavaScript :computer:
 </h2>
 <h4 align="center">
-Nesse Desafio feito uma apliação de doares de sangue com html, css, JavaScript e banco de dados.
+Nesse Desafio feito a página inicial dos cursos da rocketseat, usando nunjucks e node.js
 ---
 
 Feito com :purple_heart: by Wesley Guerra :wave:
