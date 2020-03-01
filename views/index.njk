@@ -1,0 +1,24 @@
+ {% extends 'layout.njk' %}
+ 
+ {% block title%}
+      <title>Cursos</title>
+ {%endblock%}
+
+{% block content%}
+
+    <section class="cards">
+       {% for curso in cursos%}
+        <div class="card" id="{{curso.id}}">
+            <div class="order">{{curso.order}}</div>
+            <div class="img-curse">
+                <img src="{{curso.img}}" alt="">
+            </div>
+            <div class="card-content">
+                <p><span>{{curso.title}}</span></p>
+                <p>{{curso.info}}</p>
+                </div>
+            </div>
+          {%endfor%}
+    </section>
+
+   {% endblock%}

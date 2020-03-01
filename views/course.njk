@@ -1,0 +1,19 @@
+  {% extends 'layout.njk' %} 
+    
+  {% block title%}
+      <title>{{course.title}}</title>
+     {%endblock%}
+
+{% block content%}
+    <link rel="stylesheet" href="css/style.css">
+   
+
+<div class="content-frame">
+<h1>{{course.title}}</h1>
+    <iframe src="https://www.youtube.com/embed/{{course.id2}}" frameborder="0"></iframe>
+   {% endblock%}
+</div>
+
+
+ 
+ 

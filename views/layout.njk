@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     {% block title%}
+      <title>Cursos</title>
+     {%endblock%}
+     {%block css%}
+       <link rel="stylesheet" href="/css/style.css">
+     {%endblock%}
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+               <a href="/"><img src="https://skylab.rocketseat.com.br/static/0ae02df14343f202953af82f30a1581b.svg"  alt=""></a>
+            </div>
+            <div class="user">
+            <i class="material-icons">notification_important</i>
+             {% for item in about %}
+                <div class="perfil">
+                    <h1>{{item.name}}</h1>
+                    <p>{{item.email}}</p>
+                </div>
+                <div class="photo">
+                    <img src="{{item.img}}" alt="">
+                </div>
+                 {% endfor %}
+            </div>
+        </nav>
+    </header>
+
+   {% block content%}
+   {% endblock%}
+
+<script src="js/script.js"></script>
+</body>
+
+
+
+</html>
